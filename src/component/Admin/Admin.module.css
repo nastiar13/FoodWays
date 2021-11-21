@@ -1,0 +1,45 @@
+.adminContainer {
+    padding: 4rem 10rem 15rem;
+    box-sizing: border-box;
+}
+.table {
+    width: 1073px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.th {
+    box-sizing: border-box;
+    border: 1px solid #828282;
+    padding: 6px;
+    
+    background: #E5E5E5;
+}
+.td {
+    box-sizing: border-box;
+    border: 1px solid #828282;
+    padding: 6px;
+    padding-left: 10px;
+    background: white;
+}
+
+.btnCancel {
+    margin-left: 4rem;
+    width: 80px;
+    padding: 3px;
+    background: #FF0742;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.btnApprove {
+    margin-left: 2rem;
+    width: 80px;
+    padding: 3px;
+    background: #0ACF83;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}

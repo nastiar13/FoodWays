@@ -1,0 +1,85 @@
+.addProduct {
+    padding: 3rem 9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title {
+    margin-right: 1rem;
+    padding: 10px;
+    margin-bottom: 1.6rem;
+    border-radius: 5px;
+    border: 2px solid #766C6C;
+
+}
+
+.form {
+    box-sizing: border-box;
+}
+
+.img {
+    display: inline;
+    width: 100px;
+    border: 2px solid #766C6C;
+    padding: .7rem 1rem;
+    font-size: 12px;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.price {
+    width: 97%;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-bottom: 1.6rem;
+    border-radius: 5px;
+    border: 2px solid #766C6C;
+}
+
+.save {
+    float: right;
+    margin-right: 1rem;
+    padding: 6px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: #433434;
+    color: white;
+    cursor: pointer;
+}
+
+.btnMap {
+    display: inline;
+    color: white;
+    background: #433434;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+}
+
+.mapContainer {
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    top: 300px;
+    margin-top: 5rem;
+    left: 4rem;
+
+    padding: 1rem; 
+    background: #fff;
+   
+}
+.map {
+    height: 400px;
+    width: 100%;
+    
+}
+.flex {
+    display: flex;
+}

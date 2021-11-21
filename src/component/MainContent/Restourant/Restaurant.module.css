@@ -1,0 +1,15 @@
+.restList {
+    display: flex;
+    width: 220px;
+    padding: 1rem;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+.restLogo {
+    margin-right: 1rem;
+
+}

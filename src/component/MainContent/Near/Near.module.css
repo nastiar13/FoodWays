@@ -1,0 +1,17 @@
+.near {
+    box-sizing: border-box;
+    background: white;
+    padding: 12px 10px;
+    border-radius: 5px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.h5 {
+    font-size: 18px;
+    margin-top: .3rem;
+
+}
+.dist {
+    margin-top: .4rem;
+    font-weight: 400;
+}

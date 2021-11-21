@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,400;1,500&display=swap');
+
+.nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    background: #FFC700;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.textLogo {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 23px;
+    margin-right: 6px;
+    line-height: 28px;
+    
+}
+.flexItem {
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: auto;
+    background: #433434;
+    color: white;
+    margin-right: 1rem;
+}
+.btn:hover {
+    background-color: #362a2a;
+}
+
+.cartIcon {
+    position: relative;
+    margin-right: 1rem;
+}
+.rounded {
+    position: absolute;
+    top: 0;
+    right: -.4rem;
+    background-color: red;
+    width: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    align-items: center;
+    
+    color: white;
+    font-size: 11px;
+}
+.cartTotal {
+    text-align: center;
+}
+/* .profile {
+    padding: 5px;
+    width: fit-content;
+    border-radius: 50%;
+    background-color: grey;
+} */
+.profilePic {
+    width: 35px;
+    height: 35px;
+    
+    border-radius: 50%;
+    
+}

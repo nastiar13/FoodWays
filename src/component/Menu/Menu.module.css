@@ -1,0 +1,36 @@
+.menuContainer {
+    padding: 5rem 13rem;
+    width: min-content;
+}
+.h1 {
+    margin-bottom: 2rem;
+    
+}
+
+.gridContainer {
+    
+    width: min-content;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem 2rem;
+
+}
+
+.gridItem {
+    box-sizing: border-box;
+    padding: .8rem;
+    background: white;
+    border-radius: 5px;
+}
+.img {
+    margin-bottom: .5rem;
+}
+.order {
+    margin-top: 1rem;
+    width: 100%;
+    padding: .3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #FFC700;
+}

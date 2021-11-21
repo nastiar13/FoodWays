@@ -1,0 +1,68 @@
+.profileContainer {
+    box-sizing: border-box;
+    padding: 4rem 12rem 16rem;
+    display: flex;
+}
+
+.left {
+    width: 70%;
+}
+.flexProfile {
+    display: flex;
+}
+
+.leftItem {
+    margin-right: 2rem;
+    width: 180px;
+}
+.rightItem {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 25px;
+}
+.editProfile {
+    width: 180px;
+    background: #433434;
+    margin-top: 1rem;
+    color: white;
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.historyList {
+    padding: 1rem;
+    display: flex;
+    font-size: 10px;
+    width: 420px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background: white;
+    border-radius: 5px;
+}
+.finish {
+    float: right;
+    width: 112px;
+    padding: 5px;
+    background: #00ff841a;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 13px;
+}
+.textLogo {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 23px;
+    margin-right: 6px;
+    line-height: 28px;
+    
+}
+.flexItem {
+    display: flex;
+    align-items: center;
+    
+}

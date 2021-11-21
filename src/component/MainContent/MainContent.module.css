@@ -1,0 +1,22 @@
+.container {
+    background: #E5E5E5;
+    padding: 4rem;
+    box-sizing: border-box;
+}
+
+.pop {
+    width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.flexList {
+    display: flex;
+    justify-content: space-between;
+}
+.h1 {
+    margin-bottom: 2rem;
+    font-size: 36px;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+}

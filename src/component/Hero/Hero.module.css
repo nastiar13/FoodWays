@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;700;800&family=Barlow+Condensed:ital,wght@1,400;1,500&display=swap');
+.hero {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 558px;
+    background: #FFC700;
+    padding: 2rem 237px;
+}
+.left, .right {
+    width: 50%;
+}
+.h1 {
+    font-family: 'Abhaya Libre', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 75px;
+    margin-top: 60px;
+    margin-left: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+
+.desc {
+    display: flex;
+    padding-right: 3rem;
+    box-sizing: border-box;
+}
+.line {
+    
+    width: 30%;
+    height: 3px;
+    background: #433434;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+.descP {
+    line-height: 19px;
+    width: 60%;
+    font-size: 14px;
+}
