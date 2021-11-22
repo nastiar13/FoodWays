@@ -96,14 +96,18 @@ function App() {
             </div>
             :
             <div className={style.flexItem}>
-                <Link to={`/cart/${cartId}`}>
+                {
+                  user.email === '' ?
+                  <Link to={`/cart/${cartId}`}>
                   <div className={style.cartIcon}>
                       <img src="/icon/shopping-basket.svg" alt="" />
                       {cartLength > 0 ? 
                       <div className={style.rounded}><p className={style.cartTotal}>{cartLength}</p></div> : <div></div>
                       }
                   </div>
-                </Link>
+                </Link> :
+                null
+                }
                 
                 <div onMouseLeave={none} onMouseOver={block} style={{cursor: "pointer"}} className={style.profile}>
                     <img className={style.profilePic} src={!user.email ? "/img/user-pict.png" : "/img/1.png"} />  
