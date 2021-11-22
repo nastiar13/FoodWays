@@ -1,7 +1,7 @@
 import style from './Register.module.css'
 
 const Register = (props) => {
-    const input = [{name: "Email"},{name: "Password"},{name: "Full Name"},{name: "Gender"},{name: "Phone"}]
+    const input = [{name: "Email", type: "text"},{name: "Password", type: "password"},{name: "Full Name", type: "text"},{name: "Gender", type: "text"},{name: "Phone", type: "tel"}]
     const title = "Register"
     const status= ["User", "Patner"]
     return(
@@ -11,7 +11,7 @@ const Register = (props) => {
             <form action="">
                 <h1 className={style.h1}>{title}</h1>
                 {input.map(a => {
-                    return <input className={style.input} type="text" name={a.name.toLowerCase()} placeholder={a.name} />
+                    return <input className={style.input} type={a.type} name={a.name.toLowerCase()} placeholder={a.name} />
                 })}
                 
                     <select className={style.input}>

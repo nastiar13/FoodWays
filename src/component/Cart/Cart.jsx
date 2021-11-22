@@ -7,7 +7,8 @@ import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-load
 mapboxgl.accessToken = 'pk.eyJ1IjoibmFzdGlhcjEzIiwiYSI6ImNrdzc4eHViazE5Ym4yeG1lZ2t6NDNyN2cifQ.yTCSBcFv4ZeXbMzmamJHbQ';
 
 function Cart(props) {
-    const [mapDisplay, setMapDisplay] = useState(false)
+    const [mapDisplay, setMapDisplay] = useState(true)
+    const [order, setOrder] = useState(false)
     const mapContainer = useRef(null);
     const map = useRef(null);
     const [lng, setLng] = useState(110.814733);
@@ -22,14 +23,17 @@ function Cart(props) {
         zoom: zoom
         })
     })
+    const orderTrue = () => {
+        setOrder(true)
+    }
     
     const {id} = useParams()
     const data = props.menu.find(a => a.restaurant.id == id)
-
+    
     const showMap = () => {
         setMapDisplay(!mapDisplay)
     }
-    const display = mapDisplay ? "block" : "none"
+    const display = !mapDisplay ? "block" : "none"
     return (
         <div className={style.cartContainer}>
             <div className={style.cart}>
@@ -113,13 +117,33 @@ function Cart(props) {
                             <p style={{color: "red", fontSize: "14px", fontWeight: "800"}} >Sub Total</p>
                             <p style={{color: "red"}}>Rp 40.000</p>
                         </div>
-                        <button onClick={showMap} className={style.seeHowFar}>See How Far ?</button>
+
+                        { order ? <button onClick={showMap} className={style.seeHowFar}>See How Far ?</button> : <button onClick={orderTrue} className={style.seeHowFar}>Order</button>}
+                        
+                        
+                    
+                    
+                       
                     </div>
                 </div>
             </div>
 
             <div style={{display: display}} className={style.mapContainer}>
-                <div ref={mapContainer} className={style.map} ></div>   
+                <div ref={mapContainer} className={style.map} ></div>
+                <div className={style.confirm}>
+                    <h3 style={{marginBottom: "2rem"}}>Select delivery location</h3>
+                    <div className={style.flexConfirm}>
+                        <img style={{marginRight: "2rem"}} src="/icon/location.svg" alt="" />
+                        <div className={style.address}>
+                            <h4>Harbour Building</h4>
+                            <p>Jl. Elang IV No.48, Sawah Lama, Kec. Ciputat, Kota <br /> Tangerang Selatan, Banten 15413, Indonesia</p>
+                        </div>
+                        
+                    </div>
+                    <button onClick={showMap} className={style.selectLoc}>
+                        Confirm Location
+                    </button>
+                </div>   
             </div>
             
         </div>

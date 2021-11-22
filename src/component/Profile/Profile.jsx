@@ -5,9 +5,9 @@ import { useParams } from 'react-router'
 const userList = [
     {
         id: 1,
-        title: "Profile Patner",
+        title: "My Profile",
         transaction: "History Transaction",
-        label: "Patner's Name",
+        label: "Full Name",
         name: "Andi",
         img: "/img/user-pict.png",
         email: "andigans@gmail.com",
@@ -19,10 +19,10 @@ const userList = [
     },
     {
         id: 2,
-        title: "My Profile",
+        title: "Profile Patner",
         transaction: "History Order",
         name: "Geprek Bensu",
-        label: "Full Name",
+        label: "Patner's Name",
         img: "/img/1.png",
         email: "bensu@gmail.com",
         phone: "083896833122",

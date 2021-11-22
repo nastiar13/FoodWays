@@ -54,7 +54,7 @@ function EditProfile() {
                 <input className={style.price} style={{display: "block"}} type="text" placeholder="Email" />
                 <input className={style.price} style={{display: "block"}} type="text" placeholder="Phone" />
                 <div className={style.flex}>
-                    <input className={style.price} style={{width: "75%", display: "inline"}} type="text" placeholder="Email" />
+                    <input className={style.price} style={{width: "75%", display: "inline"}} type="text" placeholder="Location" />
                     <button onClick={showMap} className={style.btnMap}>
                         <p style={{marginRight: "1rem"}}> Select on Map</p>
                         <img src="/icon/map.svg" alt="" />

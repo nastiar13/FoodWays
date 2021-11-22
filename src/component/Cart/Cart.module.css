@@ -97,8 +97,8 @@
 
 .mapContainer {
     width: 90%;
-    position: absolute;
-    top: 300px;
+    position: relative;
+    top: -600px;
     margin-top: 5rem;
     left: 4rem;
 
@@ -112,6 +112,7 @@
     font-weight: 800;
 }
 .map {
+    
     height: 400px;
     width: 100%;
     
@@ -130,5 +131,28 @@
     align-items: center;
     padding: .8rem;
     width: 90%;
+    cursor: pointer;
+}
+.confirm {
+    position: absolute;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    top: 200px;
+    left: 400px;
+}
+.flexConfirm {
+    display: flex;
+}
+
+.selectLoc {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #433434;
+    color: white;
+    font-weight: 800;
     cursor: pointer;
 }

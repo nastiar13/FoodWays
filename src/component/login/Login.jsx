@@ -2,7 +2,7 @@ import style from './Login.module.css'
 
 
 function Login(props) {
-    const input = [{name: "Email"},{name: "Password"}]
+    const input = [{name: "Email", type: "text"},{name: "Password", type: "password"}]
     const title= "Login"
 
     
@@ -25,7 +25,7 @@ function Login(props) {
                 <form >
                     <h1 className={style.h1}>{title}</h1>
                     {input.map(a => {
-                        return <input onChange={inputEmail} className={style.input} id={a.name} type="text" name={a.name.toLowerCase()} placeholder={a.name} />
+                        return <input onChange={inputEmail} className={style.input} id={a.name} type={a.type} name={a.name.toLowerCase()} placeholder={a.name} />
                     })}
                         
                     <button onClick={login} className={style.btnSubmit} type="submit">{title}</button>
